@@ -6,6 +6,7 @@ import spacy
 nlp= spacy.load("en_core_web_lg")
 svm_model_load= pickle.load(open("svm_model_saved.sav","rb"))
 def clean_text(x):
+    x=x.lower()
     doc4= nlp(x)
     clean_review= []
     for token in doc4:
