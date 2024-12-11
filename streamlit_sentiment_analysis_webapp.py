@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import spacy
 nlp= spacy.load("en_core_web_lg")
-svm_model_load= pickle.load(open("C:/Users/Premier UK/svm_model_saved.sav","rb"))
+svm_model_load= pickle.load(open("svm_model_saved.sav","rb"))
 def clean_text(x):
     doc4= nlp(x)
     clean_review= []
